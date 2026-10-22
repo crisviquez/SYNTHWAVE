@@ -12,7 +12,7 @@ function setup() {
   angleMode(DEGREES); // Usamos grados para facilitar las matemáticas circulares
   
   // Creamos el analizador de frecuencias (FFT)
-  fft = new p5.FFT(0.8, 64); // Suavizado de 0.8 y 64 bandas (para que las barras se vean limpias)
+  fft = new p5.FFT(0.81, 128); // Suavizado de 0.8 y 64 bandas (para que las barras se vean limpias)
   
   textAlign(CENTER, CENTER);
   rectMode(CENTER);

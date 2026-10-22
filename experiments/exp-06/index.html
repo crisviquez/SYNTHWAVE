@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exp-05</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+<body>
+  <div id="ui">
+    <label class="btn">Elegir audio
+      <input type="file" id="file" accept="audio/*" hidden>
+    </label>
+    <button id="play" class="btn" disabled>Play</button>
+    <label>Sensibilidad <input type="range" id="sens" min="0.5" max="3" step="0.1" value="1"></label>
+    <label>Color <input type="range" id="hue" min="0" max="360" value="280"></label>
+  </div>
+  <audio id="audio"></audio>
+  <script src="sketch.js"></script>
+</body>
+</html>
